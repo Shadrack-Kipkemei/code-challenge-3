@@ -14,7 +14,7 @@ function fetchMovieDetails(id) {
             document.getElementById("showtime").textContent = data.showtime;
             document.getElementById("poster").src = data.poster;
             document.getElementById("ticket-num").textContent = `${data.capacity - data.tickets_sold}`;
-            document.getElementById("buy-ticket").dataset.id = data.id; // Store movie id in button dataset
+            document.getElementById("buy-ticket").dataset.id = data.id; 
 
             if (data.capacity - data.tickets_sold === 0) {
                 
@@ -40,12 +40,12 @@ function fetchFilms() {
         })
         .then(data => {
             const filmsList = document.getElementById("films");
-            filmsList.innerHTML = ""; // Clear existing items
+            filmsList.innerHTML = ""; 
             data.forEach(film => {
                 const li = document.createElement("li");
                 li.className = "film item";
                 li.textContent = film.title;
-                li.id = `film-${film.id}`; // Correctly format the ID with backticks
+                li.id = `film-${film.id}`; 
                 li.addEventListener("click", () => fetchMovieDetails(film.id));
 
                 // Add delete button to each film
@@ -100,7 +100,7 @@ function deleteFilm(id) {
             return response.json();
         })
         .then(() => {
-            document.getElementById(`film-${id}`).remove(); // Correctly format the ID with backticks
+            document.getElementById(`film-${id}`).remove(); 
         })
         .catch(error => console.error('Error deleting film:', error));
 }
@@ -112,7 +112,7 @@ document.getElementById("buy-ticket").addEventListener("click", () => {
     const ticketsAvailable = parseInt(document.getElementById("ticket-num").textContent, 10);
     const movieId = document.getElementById("buy-ticket").dataset.id;
     if (ticketsAvailable > 0) {
-        const newTicketsSoldValue = ticketssold + 1; // No need to parseInt here again
+        const newTicketsSoldValue = ticketssold + 1; 
         updateTicketsSold(movieId, newTicketsSoldValue);
     }
 });
