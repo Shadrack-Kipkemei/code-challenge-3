@@ -52,7 +52,7 @@ function fetchFilms() {
                 const deleteButton = document.createElement("button");
                 deleteButton.textContent = "Delete";
                 deleteButton.addEventListener("click", (e) => {
-                    e.stopPropagation(); // Prevent click event from triggering fetchMovieDetails
+                    e.stopPropagation(); 
                     deleteFilm(film.id);
                 });
                 li.appendChild(deleteButton);

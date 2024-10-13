@@ -46,7 +46,7 @@
       "runtime": "96",
       "capacity": 50,
       "showtime": "03:30PM",
-      "tickets_sold": 45,
+      "tickets_sold": 50,
       "description": "The Martians kidnap Santa Claus because there is nobody on Mars to give their children presents.",
       "poster": "https://www.gstatic.com/tv/thumb/v22vodart/4232/p4232_v_v8_aa.jpg"
     },
@@ -56,7 +56,7 @@
       "runtime": "112",
       "capacity": 30,
       "showtime": "10:30PM",
-      "tickets_sold": 15,
+      "tickets_sold": 30,
       "description": "A young man is transformed into a hideous 'moon beast' due to a meteor fragment lodged in his body.",
       "poster": "https://www.gstatic.com/tv/thumb/v22vodart/39804/p39804_v_v8_ab.jpg"
     },
@@ -86,7 +86,7 @@
       "runtime": "99",
       "capacity": 40,
       "showtime": "07:30PM",
-      "tickets_sold": 22,
+      "tickets_sold": 40,
       "description": "A saboteur posing as a scientist strives to destroy the world's first space station.",
       "poster": "https://www.gstatic.com/tv/thumb/v22vodart/46755/p46755_v_v8_aa.jpg"
     },
