@@ -53,3 +53,14 @@ img {
 #film-info {
   padding-bottom: 15px;
 }
+
+.delete-button {
+  background-color: #ff4c4c;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 9px;
+}
+
+.delete-button:hover {
+  background-color: #ff1a1a; /* Darker shade on hover */
+}
